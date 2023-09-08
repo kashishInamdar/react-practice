@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import GreetingCard from './FestivelCard';
+import  './index.css'
 
+const ganpatiHeading = " Ganpati Mohotsav 2023";
+const ganpatiConten = " Ham ap ko 17 saptenber ko ayojit hone wale  karekaram ke amantrit krte he.  Zarur ana!";
+const janmashtmiHeading = " Janmashtami Mohotsav 2023";
+const janmashtmiConten = " Ham ap ko 17 saptenber ko ayojit hone wale  karekaram ke amantrit krte he.  Zarur ana!";
+const diwaliHeading = " diwali Mohotsav 2023";
+const diwaliConten = " Ham ap ko 19 novenbar  ki sham ko  ayojit hone wale  karekaram ke amantrit krte he.  zarur aaiye ga!";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+<>
+<div className='container'>
+<GreetingCard  heading={ganpatiHeading} conten={ganpatiConten}/>
+<GreetingCard  heading={janmashtmiHeading} conten={janmashtmiConten}/>
+<GreetingCard  heading={diwaliHeading} conten={diwaliConten}/>
+</div>
+</>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
